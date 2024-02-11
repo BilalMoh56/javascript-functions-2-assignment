@@ -5,6 +5,18 @@
 
 //Write filterByGenre(books, genre) below here:
 
+function filterByGenre(books, genre) {
+  // Use the .filter() method to filter books by the specified genre
+  const filteredBooks = books.filter(book => book.genre.toLowerCase() === genre.toLowerCase());
+
+  // Return the filtered array
+  return filteredBooks;
+}
+
+// Example usage:
+const mysteryBooks = filterByGenre(books, 'mystery');
+console.log(mysteryBooks);
+
 
 const books = [
   {
